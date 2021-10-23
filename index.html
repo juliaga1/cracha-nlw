@@ -1,0 +1,69 @@
+<!--clicando em !+enter, aparece tudo isso aqui em abaixo-->
+<!--DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+</body>
+</html>-->
+<!DOCTYPE html> <!--Informa a estrutura utilizada no código-->
+<html lang="pt_BR"> <!--informa o idioma da aplicação-->
+  <head>
+    <meta charset="UTF-8"> <!--alguns navegadores dao pau em alguns caracteres, isso faz n dar pau-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--é um ajuste que faz a tela de adaptar a tela-->
+    <title> Julia Gomes - DoWhile 2021 </title> <!--nome da aba do site-->
+    <!--<style> Caracteristicas dos elementos que criei, sendo que o ultimo (de um tipo) colocado é o que prevalece. Eu retirei o style daqui para criar um arquivo dedicado-->
+    <link rel="stylesheet" href="style.css"> <!--Isso aqui serve pra chamar o arquivo style que eu retirei-->
+    <!--Isso altera as fontes do titulo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body> <!--Textos que aparecem na pagina, atributos colocados aqui tem mais força do que é colocado no style-->
+    <main> <!--é um container com varios blocos-->
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="img/selo.svg" alt="Selo Rockestseat"> <!--src é onde ta a imagem (coloquei na mesma pasta pra não perder) e alt é o que deve aparecer caso não tiver a imagem (ajuda na acessibilidade)-->
+          </span>
+          <img id=user_image src="img/Foto de perfil.jfif" alt="Foto pessoal"> <!--o site lorempixel busca imagem aleatória-->
+        </div>
+        <h1 id ="user_name"> Julia Gomes</h1> <!--coisas que mudam n podem usar class, é melhor usar id-->
+        <a id=user_link href="https://github.com/" target="_blank"> <!--href coloca link em um texto-->
+          <img src="img/github.svg" alt="ícone github"> <!--target abre uma nova aba toda vez que clicar no link-->
+          <span id="user_login">juliaga1</span>
+        </a>
+        <p id="user_bio"> <!--frasesinha, coloquei id pra poder alterar de acordo c a API do github-->
+          Iniciante em programação, entusiasta de design
+        </p>
+        <ul id="social_links"> <!--lista não ordenada de elementos-->
+          <li class="youtube">
+            <a href="https://www.youtube.com/" target="_blank"> <!--a é uma tag, diferente de class e id-->
+              <img src="img/youtube.svg" alt="ícone youtube">
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="https://www.facebook.com/" target="_blank"> 
+              <img src="img/facebook.svg" alt="ícone facebook">
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://www.instagram.com/" target="_blank"> 
+              <img src="img/instagram.svg" alt="ícone instagram">
+            </a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/" target="_blank"> 
+              <img src="img/twitter.svg" alt="ícone twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="main.js"></script> <!--Isso aqui serve pra chamar o arquivo main.js que eu retirei, ele só ta aqui pq preciso q ele carregue tudo pra depois eu poder alterar as coisas-->
+  </body>
+</html>
